@@ -1,0 +1,483 @@
+@font-face {
+    font-family: FiveMinutes; /* Имя шрифта */
+    src: url(../fonts/Five_Minutes/FiveMinutes.otf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: RobotoBold; /* Имя шрифта */
+    src: url(../fonts/Roboto_Condensed/RobotoCondensedBold.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: RobotoLight; /* Имя шрифта */
+    src: url(../fonts/Roboto_Condensed/RobotoCondensedLight.ttf); /* Путь к файлу со шрифтом */
+   }
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	margin: 0px;
+	margin-top: -1rem;
+}
+
+h1 {
+	font: 4rem/4rem FiveMinutes ;
+	text-align: center;
+	color: #06c;
+}
+
+header {
+	position: fixed;
+	top: -1rem;
+	width: 100%;
+	height: 5rem;
+	z-index: 2;
+	background: white;
+	padding: 2rem 0 1rem 0;
+	
+}
+
+header:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.logo {
+	float: left;
+	padding: 0 0 0 2rem;
+}
+
+nav {
+	float: right;
+	background: #c6c6c6;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5px;
+	margin: 0rem 2rem 0rem 0rem;
+	position: relative;
+}
+
+nav:before {
+	display: block;
+	content: " ";
+	border-top: 11px double #0066cc;
+	border-bottom: 3px solid #0066cc;
+	position: absolute;
+	width:2rem;
+	height: 1.7rem;
+	top: calc(50% - 0.9rem);
+	left: calc(50% - 1rem);
+	box-sizing: border-box;
+}
+
+
+.nav {
+	position: relative;
+	z-index: 2;
+	right: 13rem;
+	list-style: none;
+	display: none;
+	margin: 6rem 15rem 0rem 0;
+	font: 3rem/4rem FiveMinutes;
+	width: 100%;
+	}
+
+.nav li {
+	text-transform: uppercase;
+	width: 15rem;
+	height: 4rem;
+	background: #c6c6c6;
+	border-radius: 5px;
+	margin-bottom: 3px;
+	padding: 0 0 0 0.5rem;
+	
+}
+
+.nav li a {
+	color: black;
+}
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.backgroundMain {
+	width: 100%;
+	height: auto;
+	
+}
+
+main {
+	position: relative;
+	top: 8rem;
+	padding: 0 2rem 0;
+	text-align: center;
+}
+
+.slickMain{
+padding: 5rem 0 0 0;	
+}
+
+.slick-prev{
+	position: absolute;
+	top: 50%;
+	left: -200rem;
+	z-index: 2;
+	}
+.slick-prev:before{
+	display: block;
+	content: " ";
+	height: 4rem;
+	width: 5rem;
+	position: relative;
+	right: -200rem;
+	background: url(../images/leftArrow.png);
+	
+}
+
+.slick-next {
+	position: absolute;
+	top: 50%;
+	right: 280rem;
+	}
+
+.slick-next:before{
+	display: block;
+	content: " ";
+	height: 4rem;
+	width: 5rem;
+	position: relative;
+	right: -280rem;
+	background: url(../images/rightArrow.png);
+	
+}
+
+
+.connect {
+	font: 2rem FiveMinutes;
+	text-transform: uppercase;
+	text-align: center;
+	color: #06c;
+}
+
+.contacts {
+	padding: 10rem 0 0 0;
+	color: black;
+}
+
+
+form {
+	text-align: center;
+}
+
+form input, form textarea {
+	border: 1px solid grey;
+	border-radius: 6px;
+	height: 4rem;
+	width: calc(100% - 4rem);
+	padding-left: 1rem;
+	margin: 0 0 2rem 0;
+	
+	
+}
+
+textarea {
+	min-height: 8rem;
+	max-height: 15rem;
+}
+
+
+.submit {
+	font: 3rem FiveMinutes;
+	padding: 0.5rem 4rem;
+	text-transform: uppercase;
+	border: 1px solid grey;
+	border-radius: 6px;
+	color: #06c;
+	
+	
+}
+.footerMain {
+	max-width: 1256px;
+	margin: auto;
+}
+
+.footerDiv {
+	text-align: center;
+}
+.contactsInfo {
+	width: 70%;
+	margin: auto;
+}
+
+.contactsInfo ul {
+	list-style: none;
+	font: 1.8rem FiveMinutes;
+}
+
+.contactsInfo ul li{
+	position: relative;
+	padding: 0 0 1rem 0;
+}
+.contactsInfo ul li:before {
+	display: block;
+	content: " ";	
+	height: 5rem;
+	width: 5rem;
+	position: absolute;
+	left: -4rem;
+	top: 0.5rem;
+	
+}
+
+.adress:before {
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -11px -20px;
+}
+
+.phone:before{
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -140px -20px;
+}
+
+.mail:before{
+	background: url(../images/spritesheet2.png) left no-repeat;
+	background-position: -75px -23px;
+}
+.partnersText{
+	padding: 10rem 2rem 0 2rem;
+	font: 2rem/2rem FiveMinutes;
+}
+
+.partners {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 2rem 0 2rem;
+}
+
+.partnersLogo {
+	width: auto;
+	height: 50%;
+	margin: auto;
+}
+
+.socialLincs li a{
+	position: relative;
+	left: calc(50% - 45px);
+}
+
+.desH2 {
+	font: 5rem FiveMinutes;
+}
+.service p{
+		font: 4rem FiveMinutes;
+}
+.service li{
+		font: 3rem FiveMinutes;
+	list-style: none;
+	
+}
+
+footer {
+	background: #292929;
+	margin: 11rem 0 0 0;
+}
+
+.footerDiv p {
+	text-transform: uppercase;
+	font: 2rem RobotoBold;
+	padding: 1rem 0 0 1rem;
+	color: white;
+	padding: 0;
+}
+
+.footerDiv ul {
+	list-style: none;
+	font: 2rem RobotoLight;
+	color: white;
+	padding: 0;
+}
+
+.footerDiv ul li a{
+}
+
+.social {
+	display: block;
+	float: left;
+	height: 5rem;
+	width: 5rem;
+	background: url(../images/spritesheet.png);
+	background-position: -10px -70px;
+}
+
+.footerDiv:after {
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+
+.fb {
+	background-position: -4px -8px;
+}
+
+
+
+
+@media screen and (min-width:1256px){
+	
+	.mainWidth {
+		max-width: 1256px;
+		margin: auto;
+				
+	}
+	
+	header:after {
+		display: block;
+		content: " ";
+		border-bottom: 1px solid grey;
+		max-width: 1256px;
+		margin: auto;
+		position: relative;
+		top: 2px;
+	}
+	
+	.logo {
+		width: 20%;
+		box-sizing: border-box;
+	}	
+	nav {
+		display: table;
+		width: 70%;
+		float: right;
+		background: none;
+	
+		height: auto;
+		border-radius: none;
+		margin: 0rem;
+		position: relative;
+		left: 0rem;
+		box-sizing: border-box;
+}
+
+nav:before {
+	display: none;
+	
+}
+
+
+.nav {
+	list-style: none;
+	display: table-row;
+	
+	}
+
+.nav li {
+	display: table-cell;
+	height: auto;
+	background: none;
+	
+	
+		
+}
+
+.nav li a {
+	color: black;
+	text-align: center;
+	padding: 0rem;
+	background: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	position: relative;
+	width: auto;
+}
+	
+	.nav li a:hover {
+		color: #06c;
+	}
+	
+	form {
+		max-width: 768px;
+		margin: auto;
+	}
+	
+	.contactsInfo {
+		margin: auto;
+		max-width: 768px;
+	}
+	
+	.products {
+		width: 400px;
+	}
+	
+	main {
+		max-width: 1256px;
+		margin: auto;
+	}
+	
+	header {
+		background: white;
+	}
+	
+	
+.slick-slide {
+	border: 10px solid white;
+}
+
+.desSlick div img{
+	width: 100%;
+	height: auto;
+}
+
+.desH2 {
+	font: 5rem FiveMinutes;
+}
+.service p{
+		font: 4rem FiveMinutes;
+}
+.service li{
+		font: 3rem FiveMinutes;
+	
+}
+
+main ul {
+	list-style: none;
+	padding: 0 1rem;
+}
+main ul {
+	list-style: none;
+	padding: 0 1rem;
+	font: 2rem fiveminutes;
+}
+
+main p {
+	font: 2.5rem fiveminutes;
+}
+
+.partnersLogo {
+	width: auto;
+	height: 150px;
+
+	}
+
+.footerDiv {
+	width: 33%;
+	display: inline-block;	
+	}
+
+.footerDiv:nth-child(2) {
+	position: relative;
+	top: -11rem;
+	
+	}
+.footerDiv:nth-child(3) {
+	position: relative;
+	top: -2rem;	
+	}
